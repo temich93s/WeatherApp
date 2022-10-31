@@ -13,14 +13,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginField: UITextField!
     
-    @IBAction func login(_ sender: UIButton) {
-        guard let logintext = loginField.text else { return }
-        guard let pwdtext = passwordField.text else { return }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "loginSegue" {
+            if checkLoginInfo() {
+                return true
+            } else {
+                showLoginError()
+                return false
+            }
+        }
+        return true
+    }
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "loginSegue" {
+            if let destination = segue.destination as? HelloViewController {
+                destination.name = loginField.text
+            }
+        }
+    }
+    
+    func checkLoginInfo() -> Bool {
+        guard let logintext = loginField.text else { return false }
+        guard let pwdtext = passwordField.text else { return false  }
         if logintext == "admin", pwdtext == "12345" {
             print("Успех")
+            return true
         } else {
             print("Неуспех")
+            return false
         }
+    }
+
+    @IBAction func loginTapped(_ sender: UIButton) {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "helloVC") as? HelloViewController else { return }
+        // navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+        
     }
     
     override func viewDidLoad() {
@@ -29,6 +61,7 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("ViewController viewWillAppear")
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShown(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -55,6 +88,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        print("ViewController viewWillDisappear")
         super.viewDidDisappear(animated)
         // отписываемся от нотификаций когда мы уходим с экрана
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -65,5 +99,11 @@ class ViewController: UIViewController {
         scrollView.endEditing(true)
     }
 
+    private func showLoginError() {
+        let alert = UIAlertController(title: "Ошибка!", message: "Логин, пароль неверные", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
