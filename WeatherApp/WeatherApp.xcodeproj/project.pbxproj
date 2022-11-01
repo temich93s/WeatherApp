@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA701EFC2911454900E6E87C /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA701EFB2911454900E6E87C /* CitiesViewController.swift */; };
+		AA701EFE291147A400E6E87C /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA701EFD291147A400E6E87C /* CityCell.swift */; };
 		AA8441EE290FDD4100F2F135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8441ED290FDD4100F2F135 /* AppDelegate.swift */; };
 		AA8441F0290FDD4100F2F135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8441EF290FDD4100F2F135 /* SceneDelegate.swift */; };
 		AA8441F2290FDD4100F2F135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8441F1290FDD4100F2F135 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA701EFB2911454900E6E87C /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		AA701EFD291147A400E6E87C /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		AA8441EA290FDD4100F2F135 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8441ED290FDD4100F2F135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA8441EF290FDD4100F2F135 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				AABC5978290FFA590014890B /* HelloViewController.swift */,
 				AABC597A290FFDC60014890B /* TableViewController.swift */,
 				AA8441F1290FDD4100F2F135 /* ViewController.swift */,
+				AA701EFB2911454900E6E87C /* CitiesViewController.swift */,
+				AA701EFD291147A400E6E87C /* CityCell.swift */,
 				AA8441F3290FDD4100F2F135 /* Main.storyboard */,
 				AA8441F6290FDD4200F2F135 /* Assets.xcassets */,
 				AA8441F8290FDD4200F2F135 /* LaunchScreen.storyboard */,
@@ -147,7 +153,9 @@
 				AA8441F2290FDD4100F2F135 /* ViewController.swift in Sources */,
 				AA8441EE290FDD4100F2F135 /* AppDelegate.swift in Sources */,
 				AA8441F0290FDD4100F2F135 /* SceneDelegate.swift in Sources */,
+				AA701EFC2911454900E6E87C /* CitiesViewController.swift in Sources */,
 				AABC597B290FFDC60014890B /* TableViewController.swift in Sources */,
+				AA701EFE291147A400E6E87C /* CityCell.swift in Sources */,
 				AABC5979290FFA590014890B /* HelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
