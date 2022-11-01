@@ -15,6 +15,10 @@
 		AA8441F5290FDD4100F2F135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8441F3290FDD4100F2F135 /* Main.storyboard */; };
 		AA8441F7290FDD4200F2F135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8441F6290FDD4200F2F135 /* Assets.xcassets */; };
 		AA8441FA290FDD4200F2F135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8441F8290FDD4200F2F135 /* LaunchScreen.storyboard */; };
+		AAB1CC6B2911521A008EF6C5 /* CitiesSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1CC6A2911521A008EF6C5 /* CitiesSectionViewController.swift */; };
+		AAB1CC6D291153DA008EF6C5 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1CC6C291153DA008EF6C5 /* WeatherViewController.swift */; };
+		AAB1CC6F29115474008EF6C5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1CC6E29115474008EF6C5 /* Weather.swift */; };
+		AAB1CC71291155D6008EF6C5 /* WetherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1CC70291155D6008EF6C5 /* WetherCell.swift */; };
 		AABC5979290FFA590014890B /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC5978290FFA590014890B /* HelloViewController.swift */; };
 		AABC597B290FFDC60014890B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC597A290FFDC60014890B /* TableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 		AA8441F6290FDD4200F2F135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA8441F9290FDD4200F2F135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA8441FB290FDD4200F2F135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB1CC6A2911521A008EF6C5 /* CitiesSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesSectionViewController.swift; sourceTree = "<group>"; };
+		AAB1CC6C291153DA008EF6C5 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		AAB1CC6E29115474008EF6C5 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		AAB1CC70291155D6008EF6C5 /* WetherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherCell.swift; sourceTree = "<group>"; };
 		AABC5978290FFA590014890B /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		AABC597A290FFDC60014890B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +79,10 @@
 				AA8441F1290FDD4100F2F135 /* ViewController.swift */,
 				AA701EFB2911454900E6E87C /* CitiesViewController.swift */,
 				AA701EFD291147A400E6E87C /* CityCell.swift */,
+				AAB1CC6A2911521A008EF6C5 /* CitiesSectionViewController.swift */,
+				AAB1CC6C291153DA008EF6C5 /* WeatherViewController.swift */,
+				AAB1CC6E29115474008EF6C5 /* Weather.swift */,
+				AAB1CC70291155D6008EF6C5 /* WetherCell.swift */,
 				AA8441F3290FDD4100F2F135 /* Main.storyboard */,
 				AA8441F6290FDD4200F2F135 /* Assets.xcassets */,
 				AA8441F8290FDD4200F2F135 /* LaunchScreen.storyboard */,
@@ -151,12 +163,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8441F2290FDD4100F2F135 /* ViewController.swift in Sources */,
+				AAB1CC6D291153DA008EF6C5 /* WeatherViewController.swift in Sources */,
 				AA8441EE290FDD4100F2F135 /* AppDelegate.swift in Sources */,
 				AA8441F0290FDD4100F2F135 /* SceneDelegate.swift in Sources */,
+				AAB1CC6B2911521A008EF6C5 /* CitiesSectionViewController.swift in Sources */,
 				AA701EFC2911454900E6E87C /* CitiesViewController.swift in Sources */,
+				AAB1CC6F29115474008EF6C5 /* Weather.swift in Sources */,
 				AABC597B290FFDC60014890B /* TableViewController.swift in Sources */,
 				AA701EFE291147A400E6E87C /* CityCell.swift in Sources */,
 				AABC5979290FFA590014890B /* HelloViewController.swift in Sources */,
+				AAB1CC71291155D6008EF6C5 /* WetherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
